@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+
+  <!-- CSS Includes -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/foundation.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/normalize.min.css">
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <!-- Our HTML code goes between the <body></body> tags -->
+
+  <!-- This is Foundation's Grid system. Check out the docs for more information
+       about how it works -->
+  <div class="row">
+    <div class="small-12 columns">
+      <h1>Hello world!</h1>
+    </div>
+  </div>
+
+</body>
+
+<!-- We keep our script tags down here so that the page loads before the
+     JavaScript is downloaded -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/js/foundation.min.js"></script>
+<script type="text/javascript">
+  // Loads the Foundation JS plugin once the file has loaded
+  $(document).foundation();
+  $(function() {
+    console.log("Hello world!");
+  });
+</script>
+
+</html>
+
